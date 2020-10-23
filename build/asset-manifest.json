@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tourlive/static/css/main.5f361e03.chunk.css",
+    "main.js": "/tourlive/static/js/main.441b0f77.chunk.js",
+    "main.js.map": "/tourlive/static/js/main.441b0f77.chunk.js.map",
+    "runtime-main.js": "/tourlive/static/js/runtime-main.c5d44a30.js",
+    "runtime-main.js.map": "/tourlive/static/js/runtime-main.c5d44a30.js.map",
+    "static/js/2.14e6cfe8.chunk.js": "/tourlive/static/js/2.14e6cfe8.chunk.js",
+    "static/js/2.14e6cfe8.chunk.js.map": "/tourlive/static/js/2.14e6cfe8.chunk.js.map",
+    "index.html": "/tourlive/index.html",
+    "precache-manifest.a53a29ac499243fa37da128bd161ab30.js": "/tourlive/precache-manifest.a53a29ac499243fa37da128bd161ab30.js",
+    "service-worker.js": "/tourlive/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/tourlive/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.14e6cfe8.chunk.js.LICENSE.txt": "/tourlive/static/js/2.14e6cfe8.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/tourlive/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5d44a30.js",
+    "static/js/2.14e6cfe8.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.441b0f77.chunk.js"
+  ]
+}
