@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff35a57fcc1a5df926e2cfe568d711bc",
+    "revision": "68ad274412c1ec3bc50c63e04a45402a",
     "url": "/tourlive/index.html"
   },
   {
-    "revision": "74b9558ea90943c3e724",
+    "revision": "c55438bfc7c8921efa52",
     "url": "/tourlive/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "c4964ffed4d398a0af80",
-    "url": "/tourlive/static/js/2.b9176544.chunk.js"
+    "revision": "b86f712ff873f4b7a566",
+    "url": "/tourlive/static/js/2.fa6c11fa.chunk.js"
   },
   {
     "revision": "f5fc2afae58c4ffc30c6148864765d4b",
-    "url": "/tourlive/static/js/2.b9176544.chunk.js.LICENSE.txt"
+    "url": "/tourlive/static/js/2.fa6c11fa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "74b9558ea90943c3e724",
-    "url": "/tourlive/static/js/main.9c982a1e.chunk.js"
+    "revision": "c55438bfc7c8921efa52",
+    "url": "/tourlive/static/js/main.dff36901.chunk.js"
   },
   {
     "revision": "4da5097b8ab0eea006aa",
