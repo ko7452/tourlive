@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
+import { searchTour } from "../searchTour";
+
 // 검색 기능
 // 주제별 검색 기능
 // 총 몇건의 게시글을 표시
-const Search = () => {
+const Search = ({ setbBoards }) => {
   const [search, setSearch] = useState("");
 
   const searchHandleClick = (e) => {
@@ -11,9 +13,31 @@ const Search = () => {
     setSearch(e.target.value);
   };
 
-  const onSubmitHandleClick = (e) => {
+  const searchTour = (key) => {
+    fetch(
+      `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours?search=${key}`,
+      {
+        method: "GET",
+      }
+    )
+      .then((res) => {
+        console.log("response search", res);
+        return res.json();
+      })
+      .then((res) => {
+        console.log("검색데이터", res.data.results);
+        setbBoards(res.data.results);
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+  };
+
+  const onSubmitHandleClick = async (e) => {
     console.log("검색어: ", search);
     e.preventDefault();
+    searchTour(search);
+    // await setbBoards(searchTour("스페인"));
   };
 
   return (
