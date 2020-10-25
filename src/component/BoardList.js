@@ -3,6 +3,12 @@ import React, { useState, useEffect } from "react";
 import BoardListEntry from "./BoardListEntry";
 import { searchBoard } from "../searchTour";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Table from "react-bootstrap/Table";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 // 게시판 글 나열, map을 활용하여 뿌려주기
 // 게시글 상단 표시: 번호 / 제목 / 첨부파일 / 작성일 / 조회수
 const BoardList = ({ boards, setbBoards }) => {
@@ -19,9 +25,9 @@ const BoardList = ({ boards, setbBoards }) => {
         return res.json();
       })
       .then((res) => {
-        console.log("이거 뭐나오지?", res.data.results);
+        console.log("이거 뭐나오지?", res.data);
         setbBoards(res.data.results);
-        console.log("boards 이거 다른거", boards);
+        // console.log("boards 이거 다른거", boards);
       })
       .catch((err) => {
         console.log("err", err);
@@ -30,15 +36,40 @@ const BoardList = ({ boards, setbBoards }) => {
 
   useEffect(() => {
     searchBoard();
-    console.log("sdfjdghdzjghzjhg.", boards);
+    // console.log("searchBoard 작동되니", boards); >> 빈배열 나옴
   }, []);
-  console.log("sdf234234234", boards);
+  // console.log("searchBoard 받아오는가 봐라", boards);
 
   return (
     <div>
-      {boards.map((boards) => (
-        <BoardListEntry boards={boards} />
-      ))}
+      <Container>
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <td>
+                <Row>
+                  <Col xs={6} md={1}>
+                    번호
+                  </Col>
+                  <Col xs={6} md={7}>
+                    제목
+                  </Col>
+                  <Col xs={6} md={4}>
+                    작성일
+                  </Col>
+                </Row>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              {boards.map((boards) => (
+                <BoardListEntry boards={boards} />
+              ))}
+            </tr>
+          </tbody>
+        </Table>
+      </Container>
     </div>
   );
 };

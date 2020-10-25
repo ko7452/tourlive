@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tourlive/precache-manifest.315515673b5e3b0a034f607bff364d4b.js"
+  "/tourlive/precache-manifest.a78c718f69b59a18dcc98c440b5268ae.js"
 );
 
 self.addEventListener('message', (event) => {
