@@ -19,13 +19,11 @@ const Search = ({ setbBoards }) => {
     setSearch(e.target.value);
   };
 
+  const BOARD_URL = `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`;
   const searchTour = (key) => {
-    fetch(
-      `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours?search=${key}`,
-      {
-        method: "GET",
-      }
-    )
+    fetch(BOARD_URL + `?search=${key}`, {
+      method: "GET",
+    })
       .then((res) => {
         // console.log("response search", res);
         return res.json();

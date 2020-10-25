@@ -14,13 +14,11 @@ import Col from "react-bootstrap/Col";
 const BoardList = ({ boards, setbBoards }) => {
   // const [boards, setbBoards] = useState([]);
 
+  const BOARD_URL = `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`;
   const searchBoard = () => {
-    fetch(
-      `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`,
-      {
-        method: "GET",
-      }
-    )
+    fetch(BOARD_URL, {
+      method: "GET",
+    })
       .then((res) => {
         return res.json();
       })
