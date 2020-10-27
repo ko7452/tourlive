@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tourlive/static/css/main.7a71d523.chunk.css",
-    "main.js": "/tourlive/static/js/main.618f75d3.chunk.js",
-    "main.js.map": "/tourlive/static/js/main.618f75d3.chunk.js.map",
+    "main.js": "/tourlive/static/js/main.6b12c714.chunk.js",
+    "main.js.map": "/tourlive/static/js/main.6b12c714.chunk.js.map",
     "runtime-main.js": "/tourlive/static/js/runtime-main.c5d44a30.js",
     "runtime-main.js.map": "/tourlive/static/js/runtime-main.c5d44a30.js.map",
     "static/css/2.cfed7de4.chunk.css": "/tourlive/static/css/2.cfed7de4.chunk.css",
     "static/js/2.f9e2838f.chunk.js": "/tourlive/static/js/2.f9e2838f.chunk.js",
     "static/js/2.f9e2838f.chunk.js.map": "/tourlive/static/js/2.f9e2838f.chunk.js.map",
     "index.html": "/tourlive/index.html",
-    "precache-manifest.ff00c0253a43da9d3956c0eac7328cd0.js": "/tourlive/precache-manifest.ff00c0253a43da9d3956c0eac7328cd0.js",
+    "precache-manifest.1986d40d91875e1734f43124a5cfc7dc.js": "/tourlive/precache-manifest.1986d40d91875e1734f43124a5cfc7dc.js",
     "service-worker.js": "/tourlive/service-worker.js",
     "static/css/2.cfed7de4.chunk.css.map": "/tourlive/static/css/2.cfed7de4.chunk.css.map",
     "static/css/main.7a71d523.chunk.css.map": "/tourlive/static/css/main.7a71d523.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.cfed7de4.chunk.css",
     "static/js/2.f9e2838f.chunk.js",
     "static/css/main.7a71d523.chunk.css",
-    "static/js/main.618f75d3.chunk.js"
+    "static/js/main.6b12c714.chunk.js"
   ]
 }

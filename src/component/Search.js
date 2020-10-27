@@ -19,7 +19,7 @@ const Search = ({ setbBoards }) => {
     setSearch(e.target.value);
   };
 
-  const BOARD_URL = `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`;
+  const BOARD_URL = `https://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`;
   const searchTour = async (key) => {
     await fetch(BOARD_URL + `?search=${key}`, {
       method: "GET", // GET, POST, PUT, DELETE, etc.
@@ -28,6 +28,7 @@ const Search = ({ setbBoards }) => {
       credentials: "same-origin", // include, *same-origin, omit
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       redirect: "follow", // manual, *follow, error
