@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import ReactPaginate from "react-paginate";
 
 import BoardListEntry from "./BoardListEntry";
 import { searchBoard } from "../searchTour";
@@ -8,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Table from "react-bootstrap/Table";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ListGroup from "react-bootstrap/ListGroup";
 
 // 게시판 글 나열, map을 활용하여 뿌려주기
 // 게시글 상단 표시: 번호 / 제목 / 첨부파일 / 작성일 / 조회수
@@ -42,6 +44,14 @@ const BoardList = ({ boards, setbBoards }) => {
   }, []);
   // console.log("searchBoard 받아오는가 봐라", boards);
 
+  const boardHandleClick = () => {
+    console.log("test");
+  };
+
+  const changePage = () => {
+    console.log("page button");
+  };
+
   return (
     <div>
       <Container>
@@ -66,7 +76,11 @@ const BoardList = ({ boards, setbBoards }) => {
           <tbody>
             <tr>
               {boards.map((boards) => (
-                <BoardListEntry boards={boards} />
+                <ListGroup defaultActiveKey="#link1">
+                  <ListGroup.Item action onClick={boardHandleClick}>
+                    <BoardListEntry boards={boards} />
+                  </ListGroup.Item>
+                </ListGroup>
               ))}
             </tr>
           </tbody>

@@ -2,9 +2,11 @@ import React from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
-// import Table from "react-bootstrap/Table";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+// import ListGroup from "react-bootstrap/ListGroup";
+// import Breadcrumb from "react-bootstrap/Breadcrumb";
+// import Table from "react-bootstrap/Table";
 
 const BoardListEntry = ({ boards }) => {
   // console.log("boards의 title =>> ", boards.title);
