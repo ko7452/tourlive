@@ -14,19 +14,14 @@ import Col from "react-bootstrap/Col";
 const BoardList = ({ boards, setbBoards }) => {
   // const [boards, setbBoards] = useState([]);
 
-  const BOARD_URL = `https://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`;
+  const BOARD_URL = `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`;
   const searchBoard = () => {
     fetch(BOARD_URL, {
       method: "GET", // GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
-      cache: "no-cache", // default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
-      headers: {
-        "Content-Type": "application/json",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+      mode: "cors",
+      header: {
+        "Access-Control-Allow-Origin": "*",
       },
-      redirect: "follow", // manual, *follow, error
-      referrer: "no-referrer", // no-referrer, *client
     })
       .then((res) => {
         return res.json();
