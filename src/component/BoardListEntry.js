@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
@@ -11,7 +11,7 @@ import Col from "react-bootstrap/Col";
 // import Table from "react-bootstrap/Table";
 
 const BoardListEntry = ({ boards }) => {
-  // console.log("boards의 title =>> ", boards.title);
+  console.log("boards의 title =>> ", boards);
   return (
     <div>
       <Container>
@@ -20,10 +20,15 @@ const BoardListEntry = ({ boards }) => {
             {boards.id}
           </Col>
           <Col xs={6} md={8}>
-            <Link to="/board">{boards.title}</Link>
+            <NavLink
+              to={{ pathname: "/board", query: { title: boards.title } }}
+            >
+              {boards.title}
+            </NavLink>
           </Col>
           <Col xs={6} md={3}>
-            {boards.created_at}
+            {boards.created_at.substring(0, 10)}
+            {/* 날짜만 나올 수 있도록  substring() */}
           </Col>
         </Row>
       </Container>

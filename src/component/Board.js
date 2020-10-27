@@ -5,12 +5,12 @@ import Table from "react-bootstrap/Table";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const Board = ({ history }) => {
+const Board = ({ history, boards }) => {
   // 게시글의 내용을 보여줍니다
   const homeButton = () => {
     history.push("/");
   };
-  //   console.log("boads 받아옴??", boards);
+  console.log("boads 게시글 받아옴??", boards);
   return (
     <div>
       <Container>
@@ -22,10 +22,12 @@ const Board = ({ history }) => {
                   <Col xs={6} md={1}>
                     제목
                   </Col>
-                  <Col xs={6} md={7}>
-                    제목: data.result.tilte
+                  <Col xs={6} md={9}>
+                    "(예시)국제부 기자가 들려주는 오사카성 투어"
+                    <br />
+                    빌드중...(data.result[0].title)
                   </Col>
-                  <Col xs={6} md={4}>
+                  <Col xs={6} md={2}>
                     작성일
                   </Col>
                 </Row>
@@ -39,8 +41,9 @@ const Board = ({ history }) => {
           <Row>
             <Col xs={6} md={1} />
             <Col xs={6} md={9}>
-              data.result.tilte <br />
-              "[렌트카 타고 듣는 오디오 투어] 오키나와 북부 여행"
+              "국제부 기자가 들려주는 오사카성 투어"
+              <br />
+              빌드중...(data.result[0].title)
             </Col>
             <Col xs={6} md={4} />
           </Row>

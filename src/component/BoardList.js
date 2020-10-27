@@ -29,7 +29,7 @@ const BoardList = ({ boards, setbBoards }) => {
         return res.json();
       })
       .then((res) => {
-        console.log("이거 뭐나오지?", res.data);
+        console.log("이거 뭐나오지?", res.data.rsults);
         setbBoards(res.data.results);
         // console.log("boards 이거 다른거", boards);
       })
