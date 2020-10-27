@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container";
 import Table from "react-bootstrap/Table";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 // 검색 기능
 // 주제별 검색 기능
@@ -49,25 +48,28 @@ const Search = ({ setbBoards }) => {
   };
 
   return (
-    <form onSubmit={onSubmitHandleClick}>
-      <Container>
-        <Table striped bordered hover>
-          <Navbar bg="light" expand="lg">
-            <Navbar.Brand>게시판</Navbar.Brand>
-            <Nav className="mr-auto"></Nav>
-            <div>
-              <input
-                type="text"
-                placeholder="검색어를 입력하세요"
-                value={search}
-                onChange={searchHandleClick}
-              />
-              <input variant="outline-success" type="submit" value="검색" />
-            </div>
-          </Navbar>
-        </Table>
-      </Container>
-    </form>
+    <div>
+      <h1>투어라이브</h1>
+      <form onSubmit={onSubmitHandleClick}>
+        <Container>
+          <Table striped bordered hover>
+            <Navbar bg="Danger" expand="lg">
+              <Navbar.Brand>게시판</Navbar.Brand>
+              <Nav className="mr-auto"></Nav>
+              <div>
+                <input
+                  type="text"
+                  placeholder="검색어를 입력하세요"
+                  value={search}
+                  onChange={searchHandleClick}
+                />
+                <input variant="outline-success" type="submit" value="검색" />
+              </div>
+            </Navbar>
+          </Table>
+        </Container>
+      </form>
+    </div>
   );
 };
 

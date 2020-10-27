@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 // import ReactPaginate from "react-paginate";
 
 import BoardListEntry from "./BoardListEntry";
-import { searchBoard } from "../searchTour";
+// import Board from "./Board";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
@@ -14,7 +14,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 // 게시판 글 나열, map을 활용하여 뿌려주기
 // 게시글 상단 표시: 번호 / 제목 / 첨부파일 / 작성일 / 조회수
 const BoardList = ({ boards, setbBoards }) => {
-  // const [boards, setbBoards] = useState([]);
+  // const [pageSize, setPageSize] = useState(5);
 
   const BOARD_URL = `http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v1/tours`;
   const searchBoard = () => {
@@ -42,16 +42,14 @@ const BoardList = ({ boards, setbBoards }) => {
     searchBoard();
     // console.log("searchBoard 작동되니", boards); >> 빈배열 나옴
   }, []);
-  // console.log("searchBoard 받아오는가 봐라", boards);
-
+  console.log("searchBoard 받아오는가 봐라", boards);
+  /*
   const boardHandleClick = () => {
-    console.log("test");
+    // history.push("/board");
+    console.log("history", history);
+    // console.log("boardHandleClick");
   };
-
-  const changePage = () => {
-    console.log("page button");
-  };
-
+   */
   return (
     <div>
       <Container>
@@ -76,8 +74,8 @@ const BoardList = ({ boards, setbBoards }) => {
           <tbody>
             <tr>
               {boards.map((boards) => (
-                <ListGroup defaultActiveKey="#link1">
-                  <ListGroup.Item action onClick={boardHandleClick}>
+                <ListGroup>
+                  <ListGroup.Item action>
                     <BoardListEntry boards={boards} />
                   </ListGroup.Item>
                 </ListGroup>
@@ -86,9 +84,12 @@ const BoardList = ({ boards, setbBoards }) => {
           </tbody>
         </Table>
       </Container>
+      <h7>총 [{boards.length}]개의 게시글</h7>
     </div>
   );
 };
+
+export default BoardList;
 // const fetchInitialData = async () => {
 //   const initialData = await searchBoard();
 //   setbBoards(initialData);
@@ -123,7 +124,6 @@ const BoardList = ({ boards, setbBoards }) => {
         />
       ))}
 */
-export default BoardList;
 
 // const TOUR_URL = "http://tourlive-code-test-1586978259.ap-northeast-2.elb.amazonaws.com/v2/tours";
 // const url = `http://${process.env.REACT_APP_SERVER_HOST}:${process.env.REACT_APP_SERVER_PORT}/v2/tours`
