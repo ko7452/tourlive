@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/tourlive/static/css/main.7a71d523.chunk.css",
-    "main.js": "/tourlive/static/js/main.deca3a6d.chunk.js",
-    "main.js.map": "/tourlive/static/js/main.deca3a6d.chunk.js.map",
+    "main.js": "/tourlive/static/js/main.a52dbda2.chunk.js",
+    "main.js.map": "/tourlive/static/js/main.a52dbda2.chunk.js.map",
     "runtime-main.js": "/tourlive/static/js/runtime-main.c5d44a30.js",
     "runtime-main.js.map": "/tourlive/static/js/runtime-main.c5d44a30.js.map",
     "static/css/2.40563451.chunk.css": "/tourlive/static/css/2.40563451.chunk.css",
-    "static/js/2.a656e7d5.chunk.js": "/tourlive/static/js/2.a656e7d5.chunk.js",
-    "static/js/2.a656e7d5.chunk.js.map": "/tourlive/static/js/2.a656e7d5.chunk.js.map",
+    "static/js/2.39fd9765.chunk.js": "/tourlive/static/js/2.39fd9765.chunk.js",
+    "static/js/2.39fd9765.chunk.js.map": "/tourlive/static/js/2.39fd9765.chunk.js.map",
     "index.html": "/tourlive/index.html",
-    "precache-manifest.8c25dc8247573f42531a4b5f494d4984.js": "/tourlive/precache-manifest.8c25dc8247573f42531a4b5f494d4984.js",
+    "precache-manifest.2de964d73217df96cbceffb6fe919d21.js": "/tourlive/precache-manifest.2de964d73217df96cbceffb6fe919d21.js",
     "service-worker.js": "/tourlive/service-worker.js",
     "static/css/2.40563451.chunk.css.map": "/tourlive/static/css/2.40563451.chunk.css.map",
     "static/css/main.7a71d523.chunk.css.map": "/tourlive/static/css/main.7a71d523.chunk.css.map",
-    "static/js/2.a656e7d5.chunk.js.LICENSE.txt": "/tourlive/static/js/2.a656e7d5.chunk.js.LICENSE.txt"
+    "static/js/2.39fd9765.chunk.js.LICENSE.txt": "/tourlive/static/js/2.39fd9765.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c5d44a30.js",
     "static/css/2.40563451.chunk.css",
-    "static/js/2.a656e7d5.chunk.js",
+    "static/js/2.39fd9765.chunk.js",
     "static/css/main.7a71d523.chunk.css",
-    "static/js/main.deca3a6d.chunk.js"
+    "static/js/main.a52dbda2.chunk.js"
   ]
 }
