@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/tourlive/static/css/main.7a71d523.chunk.css",
-    "main.js": "/tourlive/static/js/main.d75b4610.chunk.js",
-    "main.js.map": "/tourlive/static/js/main.d75b4610.chunk.js.map",
+    "main.js": "/tourlive/static/js/main.d8b6e177.chunk.js",
+    "main.js.map": "/tourlive/static/js/main.d8b6e177.chunk.js.map",
     "runtime-main.js": "/tourlive/static/js/runtime-main.c5d44a30.js",
     "runtime-main.js.map": "/tourlive/static/js/runtime-main.c5d44a30.js.map",
     "static/css/2.cfed7de4.chunk.css": "/tourlive/static/css/2.cfed7de4.chunk.css",
-    "static/js/2.f9e2838f.chunk.js": "/tourlive/static/js/2.f9e2838f.chunk.js",
-    "static/js/2.f9e2838f.chunk.js.map": "/tourlive/static/js/2.f9e2838f.chunk.js.map",
+    "static/js/2.0f9b0908.chunk.js": "/tourlive/static/js/2.0f9b0908.chunk.js",
+    "static/js/2.0f9b0908.chunk.js.map": "/tourlive/static/js/2.0f9b0908.chunk.js.map",
     "index.html": "/tourlive/index.html",
-    "precache-manifest.9629a5c7f8c1f7cb4278e8f716d60963.js": "/tourlive/precache-manifest.9629a5c7f8c1f7cb4278e8f716d60963.js",
+    "precache-manifest.2b618a6c03c2c3ec89202a5b9abe4871.js": "/tourlive/precache-manifest.2b618a6c03c2c3ec89202a5b9abe4871.js",
     "service-worker.js": "/tourlive/service-worker.js",
     "static/css/2.cfed7de4.chunk.css.map": "/tourlive/static/css/2.cfed7de4.chunk.css.map",
     "static/css/main.7a71d523.chunk.css.map": "/tourlive/static/css/main.7a71d523.chunk.css.map",
-    "static/js/2.f9e2838f.chunk.js.LICENSE.txt": "/tourlive/static/js/2.f9e2838f.chunk.js.LICENSE.txt"
+    "static/js/2.0f9b0908.chunk.js.LICENSE.txt": "/tourlive/static/js/2.0f9b0908.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c5d44a30.js",
     "static/css/2.cfed7de4.chunk.css",
-    "static/js/2.f9e2838f.chunk.js",
+    "static/js/2.0f9b0908.chunk.js",
     "static/css/main.7a71d523.chunk.css",
-    "static/js/main.d75b4610.chunk.js"
+    "static/js/main.d8b6e177.chunk.js"
   ]
 }
